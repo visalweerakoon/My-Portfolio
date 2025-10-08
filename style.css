@@ -27,7 +27,7 @@ section{
 
 nav {
     display: flex;
-    width: 80%;
+    width: 100%;
     
     margin: auto;
     padding: 20px 0;
@@ -35,7 +35,8 @@ nav {
     justify-content: space-between;
     position: fixed;
     z-index: 10;
-    margin-left: 10%;
+    margin-left: 0;
+    
     top: 0;
     right: 0;
     left: 0;
@@ -45,11 +46,13 @@ nav {
 .logo {
     height: 100px;
     width: 100px;
+    padding-left: 10%;
 }
 
 nav ul.menu {
     display: flex;
     list-style: none;
+    margin-right: 10%;
 }
 
 nav ul.menu li {
@@ -69,12 +72,14 @@ nav ul.menu li a:hover {
 
 #menu-toggle {
     display: none;
+    
 }
 
 .menu-icon {
     display: none;
     cursor: pointer;
     font-size: 28px;
+    padding-right: 10%;
 }
 
 span {
@@ -173,6 +178,8 @@ section{
 
     #menu-toggle:checked~.menu {
         display: flex;
+        
+
     }
 
     nav ul.menu li {
